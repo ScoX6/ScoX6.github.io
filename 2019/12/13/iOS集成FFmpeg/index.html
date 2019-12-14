@@ -94,13 +94,15 @@
 
 
 
-<meta name="description" content="ScoX的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ScoX">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+<meta name="description" content="iOS集成FFmpeg###一、Mac配置FFmpeg环境  安装homebrew  打开终端输入以下命令行：   &#96;ruby -e &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;master&#x2F;install)&quot;&#96;  安装FFmpeg  1）利用上面的homebrew安装FFmpeg：  bre">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS集成FFmpeg">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;13&#x2F;iOS%E9%9B%86%E6%88%90FFmpeg&#x2F;index.html">
 <meta property="og:site_name" content="ScoX">
-<meta property="og:description" content="ScoX的博客">
+<meta property="og:description" content="iOS集成FFmpeg###一、Mac配置FFmpeg环境  安装homebrew  打开终端输入以下命令行：   &#96;ruby -e &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;master&#x2F;install)&quot;&#96;  安装FFmpeg  1）利用上面的homebrew安装FFmpeg：  bre">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-12-13T07:14:59.000Z">
+<meta property="article:modified_time" content="2019-12-14T15:19:59.584Z">
 <meta property="article:author" content="ScoX">
 <meta name="twitter:card" content="summary">
 
@@ -131,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/12/13/iOS集成FFmpeg/"/>
 
 
 
 
 
-  <title>ScoX</title>
+  <title>iOS集成FFmpeg | ScoX</title>
   
 
 
@@ -162,9 +164,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,301 +247,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/13/MacOS%20%E4%BD%BF%E7%94%A8iterm2%E6%9B%BF%E4%BB%A3%E7%B3%BB%E7%BB%9Fterminal/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ScoX">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ScoX">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/13/MacOS%20%E4%BD%BF%E7%94%A8iterm2%E6%9B%BF%E4%BB%A3%E7%B3%BB%E7%BB%9Fterminal/" itemprop="url">MacOS 使用Iterm2替代系统terminal</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-13T15:24:59+08:00">
-                2019-12-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="MacOS-使用Iterm2替代系统terminal"><a href="#MacOS-使用Iterm2替代系统terminal" class="headerlink" title="MacOS 使用Iterm2替代系统terminal"></a>MacOS 使用Iterm2替代系统terminal</h1><h3 id="一、安装iTerm2"><a href="#一、安装iTerm2" class="headerlink" title="一、安装iTerm2"></a>一、安装iTerm2</h3><p>下载地址：<a href="https://www.iterm2.com/downloads.html" target="_blank" rel="noopener">https://www.iterm2.com/downloads.html</a></p>
-<p>下载的压缩文件，解压后是可直接运行的程序，将该程序拖到Application目录下</p>
-<p>或者你可以直接使用Homebrew进行安装</p>
-<p><code>brew cask install iterm2</code></p>
-<h3 id="二、配置Oh-My-Zsh"><a href="#二、配置Oh-My-Zsh" class="headerlink" title="二、配置Oh My Zsh"></a>二、配置Oh My Zsh</h3><p>Oh My Zsh是对主题进一步扩展，下载地址：<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="noopener">https://github.com/robbyrussell/oh-my-zsh</a></p>
-<p>命令行安装：</p>
-<p><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</code></p>
-<p>安装好之后，需要把Zsh设置为当前用户默认Shell</p>
-<p><code>chsh -s /bin/zsh</code></p>
-<h3 id="三、下载字体"><a href="#三、下载字体" class="headerlink" title="三、下载字体"></a>三、下载字体</h3><p>命令下载</p>
-<p><code>git clone https://github.com/powerline/fonts.git --depth=1</code></p>
-<p>安装</p>
-<p><code>执行fonts目录下install.sh脚本</code></p>
-<h3 id="四、使用zsh自带主题"><a href="#四、使用zsh自带主题" class="headerlink" title="四、使用zsh自带主题"></a>四、使用zsh自带主题</h3><p>设置agnoster主题</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">编辑vim ~&#x2F;.zshrc , 将主题配置修改为 ZSH_THEME&#x3D;&quot;agnoster&quot;</span><br></pre></td></tr></table></figure>
-
-<p>zsh主题列表：<br><a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes" target="_blank" rel="noopener">https://github.com/robbyrussell/oh-my-zsh/wiki/themes</a></p>
-<h3 id="五、使用powerlevel9k主题"><a href="#五、使用powerlevel9k主题" class="headerlink" title="五、使用powerlevel9k主题"></a>五、使用powerlevel9k主题</h3><p>命令行安装</p>
-<p><code>$ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k</code></p>
-<p>设置powerlevel9k主题</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">编辑vim ~&#x2F;.zshrc , 将主题配置修改为 ZSH_THEME&#x3D;&quot;powerlevel9k、powerlevel9k&quot;</span><br></pre></td></tr></table></figure>
-
-<p>powerlevel9k主页：<br><a href="https://github.com/bhilburn/powerlevel9k" target="_blank" rel="noopener">https://github.com/bhilburn/powerlevel9k</a></p>
-<h3 id="六、配置插件"><a href="#六、配置插件" class="headerlink" title="六、配置插件"></a>六、配置插件</h3><ul>
-<li><p>申明高亮 zsh-syntax-highlighting<br>使用Homebrew安装</p>
-<p>  <code>brew install zsh-syntax-highlighting</code></p>
-</li>
-<li><p>自动填充 zsh-autosuggestions<br>克隆<code>zsh-autosuggestions</code>项目，到指定目录</p>
-<p>  <code>git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions</code></p>
-</li>
-<li><p>配置插件<br>编辑<code>.zshrc</code>文件，设置plugins项</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">plugins&#x3D;(</span><br><span class="line">  git</span><br><span class="line">  iterm2</span><br><span class="line">  macports</span><br><span class="line">  man</span><br><span class="line">  osx</span><br><span class="line">  python</span><br><span class="line">  composer</span><br><span class="line">  zsh-autosuggestions</span><br><span class="line">  zsh-syntax-highlighting #必须写在最后</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="七、设置Finder目录打开iTerm2"><a href="#七、设置Finder目录打开iTerm2" class="headerlink" title="七、设置Finder目录打开iTerm2"></a>七、设置Finder目录打开iTerm2</h3><p>参考：<a href="https://www.jianshu.com/p/445d3f754c4d" target="_blank" rel="noopener">Mac 配置Finder当前目录打开iTerm2</a></p>
-<p>配置Automator方法</p>
-<ul>
-<li><p>打开<code>Automator</code>，选择<code>新建</code>，选择<code>快速操作</code><br><img src="media/15600567251459/first.png" alt="first"></p>
-</li>
-<li><p>选择<code>位于</code>为<code>访达</code>，从左侧的资源库中找出<code>使用工具</code>，双击<code>运行AppleScript</code><br><img src="media/15600567251459/second.png" alt="second"></p>
-</li>
-<li><p>在刚刚创建的<code>AppleScirpt</code>脚本输入框中输入以下代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">on run &#123;input, parameters&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    tell application &quot;Finder&quot;</span><br><span class="line"></span><br><span class="line">        set pathList to (quoted form of POSIX path of (folder of the front window as alias))</span><br><span class="line"></span><br><span class="line">        set command to &quot;clear; cd &quot; &amp; pathList</span><br><span class="line"></span><br><span class="line">    end tell</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    tell application &quot;System Events&quot;</span><br><span class="line"></span><br><span class="line">        -- some versions might identify as &quot;iTerm2&quot; instead of &quot;iTerm&quot;</span><br><span class="line"></span><br><span class="line">        set isRunning to (exists (processes where name is &quot;iTerm&quot;)) or (exists (processes where name is &quot;iTerm2&quot;))</span><br><span class="line"></span><br><span class="line">    end tell</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    tell application &quot;iTerm&quot;</span><br><span class="line"></span><br><span class="line">        activate</span><br><span class="line"></span><br><span class="line">        set hasNoWindows to ((count of windows) is 0)</span><br><span class="line"></span><br><span class="line">        if isRunning and hasNoWindows then</span><br><span class="line"></span><br><span class="line">            create window with default profile</span><br><span class="line"></span><br><span class="line">        end if</span><br><span class="line"></span><br><span class="line">        select first window</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        tell the first window</span><br><span class="line"></span><br><span class="line">            if isRunning and hasNoWindows is false then</span><br><span class="line"></span><br><span class="line">                create tab with default profile</span><br><span class="line"></span><br><span class="line">            end if</span><br><span class="line"></span><br><span class="line">            tell current session to write text command</span><br><span class="line"></span><br><span class="line">        end tell</span><br><span class="line"></span><br><span class="line">    end tell</span><br><span class="line">end run</span><br></pre></td></tr></table></figure></li>
-<li><p>设置服务快捷键<br><img src="media/15600567251459/last.png" alt="last"></p>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/13/%E7%AC%A6%E5%8F%B7%E5%8C%96Crash%E6%96%87%E4%BB%B6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ScoX">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ScoX">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/13/%E7%AC%A6%E5%8F%B7%E5%8C%96Crash%E6%96%87%E4%BB%B6/" itemprop="url">符号化Crash文件</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-13T15:22:59+08:00">
-                2019-12-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="符号化Crash文件"><a href="#符号化Crash文件" class="headerlink" title="符号化Crash文件"></a>符号化Crash文件</h1><h3 id="一、获取以下三个文件"><a href="#一、获取以下三个文件" class="headerlink" title="一、获取以下三个文件"></a>一、获取以下三个文件</h3><ol>
-<li>crash报告（.crash文件）</li>
-<li>符号文件（.dsymb文件）</li>
-<li>应用程序文件（appName.app文件，把IPA文件后缀改为zip，然后解压，Payload目录下的appName.app文件。这里的appName是你的应用程序的名称）</li>
-</ol>
-<h3 id="二、在处理之前"><a href="#二、在处理之前" class="headerlink" title="二、在处理之前"></a>二、在处理之前</h3><p>将”.app”,”.DSYM”,”.crash”文件放在同一个目录下</p>
-<h3 id="三、执行下面命令"><a href="#三、执行下面命令" class="headerlink" title="三、执行下面命令"></a>三、执行下面命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export DEVELOPER_DIR&#x3D;&#x2F;Applications&#x2F;Xcode.app&#x2F;Contents&#x2F;Developer</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;Application&#x2F;Xcode.app&#x2F;Contents&#x2F;Developer&#x2F;Platforms&#x2F;iPhoneOS.platform&#x2F;Developer&#x2F;Library&#x2F;PrivateFrameworks&#x2F;DTDeviceKitBase.framework&#x2F;Versions&#x2F;A&#x2F;Resources&#x2F;symbolicatecrash appName.crash appName.app &gt; appName.log</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -571,9 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/13/iOS%E9%9B%86%E6%88%90FFmpeg/" itemprop="url">iOS集成FFmpeg</a></h1>
+          <h1 class="post-title" itemprop="name headline">iOS集成FFmpeg</h1>
         
 
         <div class="post-meta">
@@ -623,9 +329,7 @@
       
 
       
-        
-          
-            <h1 id="iOS集成FFmpeg"><a href="#iOS集成FFmpeg" class="headerlink" title="iOS集成FFmpeg"></a>iOS集成FFmpeg</h1><p>###一、Mac配置FFmpeg环境</p>
+        <h1 id="iOS集成FFmpeg"><a href="#iOS集成FFmpeg" class="headerlink" title="iOS集成FFmpeg"></a>iOS集成FFmpeg</h1><p>###一、Mac配置FFmpeg环境</p>
 <ol>
 <li><p>安装homebrew</p>
 <p> 打开终端输入以下命令行：</p>
@@ -679,8 +383,6 @@
 </ol>
 <p>参考链接：<br>iOS 集成FFmpeg(通过ffmpeg.h进行调用)：<a href="https://www.jianshu.com/p/35ba59292e70" target="_blank" rel="noopener">https://www.jianshu.com/p/35ba59292e70</a><br>iOS项目中编译和集成FFmpeg：<a href="https://www.jianshu.com/p/8eef655e1e7c" target="_blank" rel="noopener">https://www.jianshu.com/p/8eef655e1e7c</a><br>（iOS） FFmpeg学习笔记：<a href="https://www.jianshu.com/p/bdc78b45354c" target="_blank" rel="noopener">https://www.jianshu.com/p/bdc78b45354c</a></p>
 
-          
-        
       
     </div>
     
@@ -697,152 +399,32 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/12/AOPAspect%E6%80%9D%E8%B7%AF%E5%88%86%E6%9E%90/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ScoX">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ScoX">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/12/AOPAspect%E6%80%9D%E8%B7%AF%E5%88%86%E6%9E%90/" itemprop="url">AOPAspect思路分析</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-12T18:52:17+08:00">
-                2019-12-12
-              </time>
+              <a href="/2019/12/12/AOPAspect%E6%80%9D%E8%B7%AF%E5%88%86%E6%9E%90/" rel="next" title="AOPAspect思路分析">
+                <i class="fa fa-chevron-left"></i> AOPAspect思路分析
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
+              <a href="/2019/12/13/%E7%AC%A6%E5%8F%B7%E5%8C%96Crash%E6%96%87%E4%BB%B6/" rel="prev" title="符号化Crash文件">
+                符号化Crash文件 <i class="fa fa-chevron-right"></i>
+              </a>
             
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="AOPAspect-思路分析"><a href="#AOPAspect-思路分析" class="headerlink" title="AOPAspect 思路分析"></a>AOPAspect 思路分析</h1><h3 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h3><p><a href="media/15761479376219/AOPAspect.h">AOPAspect.h</a><br><a href="media/15761479376219/AOPAspect.m">AOPAspect.m</a></p>
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><ul>
-<li><p>绑定思路</p>
-<ol>
-<li>提取目标方法(Method)的实现(IMP)</li>
-<li>替换目标方法(Method)的实现为_objc_msgForward</li>
-<li>自身生成一个forwardingTargetForSelector：的映射方法并绑定forwardingTargetForSelector:实现(IMP)</li>
-<li>替换目标的forwardingTargetForSelector：的实现(IMP)为自身的baseClassForwardingTargetForSelector：实现(IMP)</li>
-<li>自身生成目标方法的一个映射方法，并绑定步骤1的实现(IMP)</li>
-<li>存储为替换类型</li>
-<li>存储为外部绑定类型</li>
-</ol>
-</li>
-<li><p>路由思路</p>
-<ol>
-<li>恢复目标方法的默认实现</li>
-<li>循环存储结构，并调用内部绑定的block</li>
-<li>重新绑定</li>
-</ol>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -852,10 +434,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -863,6 +446,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -883,8 +470,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -928,6 +524,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#iOS集成FFmpeg"><span class="nav-number">1.</span> <span class="nav-text">iOS集成FFmpeg</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#二、iOS集成FFmpeg"><span class="nav-number">1.0.1.</span> <span class="nav-text">二、iOS集成FFmpeg</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、使用FFmpeg转码"><span class="nav-number">1.0.2.</span> <span class="nav-text">四、使用FFmpeg转码</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1041,10 +653,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 

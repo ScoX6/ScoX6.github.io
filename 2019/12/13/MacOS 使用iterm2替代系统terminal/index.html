@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="MacOS 使用Iterm2替代系统terminal一、安装iTerm2下载地址：https:&#x2F;&#x2F;www.iterm2.com&#x2F;downloads.html 下载的压缩文件，解压后是可直接运行的程序，将该程序拖到Application目录下 或者你可以直接使用Homebrew进行安装 brew cask install iterm2 二、配置Oh My ZshOh My Zsh是对主题进一步扩展，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MacOS 使用Iterm2替代系统terminal">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;13&#x2F;MacOS%20%E4%BD%BF%E7%94%A8iterm2%E6%9B%BF%E4%BB%A3%E7%B3%BB%E7%BB%9Fterminal&#x2F;index.html">
+<meta property="og:site_name" content="ScoX">
+<meta property="og:description" content="MacOS 使用Iterm2替代系统terminal一、安装iTerm2下载地址：https:&#x2F;&#x2F;www.iterm2.com&#x2F;downloads.html 下载的压缩文件，解压后是可直接运行的程序，将该程序拖到Application目录下 或者你可以直接使用Homebrew进行安装 brew cask install iterm2 二、配置Oh My ZshOh My Zsh是对主题进一步扩展，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;13&#x2F;MacOS%20%E4%BD%BF%E7%94%A8iterm2%E6%9B%BF%E4%BB%A3%E7%B3%BB%E7%BB%9Fterminal&#x2F;media&#x2F;15600567251459&#x2F;first.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;13&#x2F;MacOS%20%E4%BD%BF%E7%94%A8iterm2%E6%9B%BF%E4%BB%A3%E7%B3%BB%E7%BB%9Fterminal&#x2F;media&#x2F;15600567251459&#x2F;second.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;13&#x2F;MacOS%20%E4%BD%BF%E7%94%A8iterm2%E6%9B%BF%E4%BB%A3%E7%B3%BB%E7%BB%9Fterminal&#x2F;media&#x2F;15600567251459&#x2F;last.png">
+<meta property="article:published_time" content="2019-12-13T07:24:59.000Z">
+<meta property="article:modified_time" content="2019-12-14T15:20:22.115Z">
+<meta property="article:author" content="ScoX">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;13&#x2F;MacOS%20%E4%BD%BF%E7%94%A8iterm2%E6%9B%BF%E4%BB%A3%E7%B3%BB%E7%BB%9Fterminal&#x2F;media&#x2F;15600567251459&#x2F;first.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/12/13/MacOS 使用iterm2替代系统terminal/"/>
+
+
+
+
+
+  <title>MacOS 使用Iterm2替代系统terminal | ScoX</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.1.1"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ScoX</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/13/MacOS%20%E4%BD%BF%E7%94%A8iterm2%E6%9B%BF%E4%BB%A3%E7%B3%BB%E7%BB%9Fterminal/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ScoX">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ScoX">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">MacOS 使用Iterm2替代系统terminal</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-13T15:24:59+08:00">
+                2019-12-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="MacOS-使用Iterm2替代系统terminal"><a href="#MacOS-使用Iterm2替代系统terminal" class="headerlink" title="MacOS 使用Iterm2替代系统terminal"></a>MacOS 使用Iterm2替代系统terminal</h1><h3 id="一、安装iTerm2"><a href="#一、安装iTerm2" class="headerlink" title="一、安装iTerm2"></a>一、安装iTerm2</h3><p>下载地址：<a href="https://www.iterm2.com/downloads.html" target="_blank" rel="noopener">https://www.iterm2.com/downloads.html</a></p>
+<p>下载的压缩文件，解压后是可直接运行的程序，将该程序拖到Application目录下</p>
+<p>或者你可以直接使用Homebrew进行安装</p>
+<p><code>brew cask install iterm2</code></p>
+<h3 id="二、配置Oh-My-Zsh"><a href="#二、配置Oh-My-Zsh" class="headerlink" title="二、配置Oh My Zsh"></a>二、配置Oh My Zsh</h3><p>Oh My Zsh是对主题进一步扩展，下载地址：<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="noopener">https://github.com/robbyrussell/oh-my-zsh</a></p>
+<p>命令行安装：</p>
+<p><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</code></p>
+<p>安装好之后，需要把Zsh设置为当前用户默认Shell</p>
+<p><code>chsh -s /bin/zsh</code></p>
+<h3 id="三、下载字体"><a href="#三、下载字体" class="headerlink" title="三、下载字体"></a>三、下载字体</h3><p>命令下载</p>
+<p><code>git clone https://github.com/powerline/fonts.git --depth=1</code></p>
+<p>安装</p>
+<p><code>执行fonts目录下install.sh脚本</code></p>
+<h3 id="四、使用zsh自带主题"><a href="#四、使用zsh自带主题" class="headerlink" title="四、使用zsh自带主题"></a>四、使用zsh自带主题</h3><p>设置agnoster主题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">编辑vim ~&#x2F;.zshrc , 将主题配置修改为 ZSH_THEME&#x3D;&quot;agnoster&quot;</span><br></pre></td></tr></table></figure>
+
+<p>zsh主题列表：<br><a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes" target="_blank" rel="noopener">https://github.com/robbyrussell/oh-my-zsh/wiki/themes</a></p>
+<h3 id="五、使用powerlevel9k主题"><a href="#五、使用powerlevel9k主题" class="headerlink" title="五、使用powerlevel9k主题"></a>五、使用powerlevel9k主题</h3><p>命令行安装</p>
+<p><code>$ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k</code></p>
+<p>设置powerlevel9k主题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">编辑vim ~&#x2F;.zshrc , 将主题配置修改为 ZSH_THEME&#x3D;&quot;powerlevel9k、powerlevel9k&quot;</span><br></pre></td></tr></table></figure>
+
+<p>powerlevel9k主页：<br><a href="https://github.com/bhilburn/powerlevel9k" target="_blank" rel="noopener">https://github.com/bhilburn/powerlevel9k</a></p>
+<h3 id="六、配置插件"><a href="#六、配置插件" class="headerlink" title="六、配置插件"></a>六、配置插件</h3><ul>
+<li><p>申明高亮 zsh-syntax-highlighting<br>使用Homebrew安装</p>
+<p>  <code>brew install zsh-syntax-highlighting</code></p>
+</li>
+<li><p>自动填充 zsh-autosuggestions<br>克隆<code>zsh-autosuggestions</code>项目，到指定目录</p>
+<p>  <code>git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions</code></p>
+</li>
+<li><p>配置插件<br>编辑<code>.zshrc</code>文件，设置plugins项</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">plugins&#x3D;(</span><br><span class="line">  git</span><br><span class="line">  iterm2</span><br><span class="line">  macports</span><br><span class="line">  man</span><br><span class="line">  osx</span><br><span class="line">  python</span><br><span class="line">  composer</span><br><span class="line">  zsh-autosuggestions</span><br><span class="line">  zsh-syntax-highlighting #必须写在最后</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="七、设置Finder目录打开iTerm2"><a href="#七、设置Finder目录打开iTerm2" class="headerlink" title="七、设置Finder目录打开iTerm2"></a>七、设置Finder目录打开iTerm2</h3><p>参考：<a href="https://www.jianshu.com/p/445d3f754c4d" target="_blank" rel="noopener">Mac 配置Finder当前目录打开iTerm2</a></p>
+<p>配置Automator方法</p>
+<ul>
+<li><p>打开<code>Automator</code>，选择<code>新建</code>，选择<code>快速操作</code><br><img src="media/15600567251459/first.png" alt="first"></p>
+</li>
+<li><p>选择<code>位于</code>为<code>访达</code>，从左侧的资源库中找出<code>使用工具</code>，双击<code>运行AppleScript</code><br><img src="media/15600567251459/second.png" alt="second"></p>
+</li>
+<li><p>在刚刚创建的<code>AppleScirpt</code>脚本输入框中输入以下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">on run &#123;input, parameters&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    tell application &quot;Finder&quot;</span><br><span class="line"></span><br><span class="line">        set pathList to (quoted form of POSIX path of (folder of the front window as alias))</span><br><span class="line"></span><br><span class="line">        set command to &quot;clear; cd &quot; &amp; pathList</span><br><span class="line"></span><br><span class="line">    end tell</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    tell application &quot;System Events&quot;</span><br><span class="line"></span><br><span class="line">        -- some versions might identify as &quot;iTerm2&quot; instead of &quot;iTerm&quot;</span><br><span class="line"></span><br><span class="line">        set isRunning to (exists (processes where name is &quot;iTerm&quot;)) or (exists (processes where name is &quot;iTerm2&quot;))</span><br><span class="line"></span><br><span class="line">    end tell</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    tell application &quot;iTerm&quot;</span><br><span class="line"></span><br><span class="line">        activate</span><br><span class="line"></span><br><span class="line">        set hasNoWindows to ((count of windows) is 0)</span><br><span class="line"></span><br><span class="line">        if isRunning and hasNoWindows then</span><br><span class="line"></span><br><span class="line">            create window with default profile</span><br><span class="line"></span><br><span class="line">        end if</span><br><span class="line"></span><br><span class="line">        select first window</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        tell the first window</span><br><span class="line"></span><br><span class="line">            if isRunning and hasNoWindows is false then</span><br><span class="line"></span><br><span class="line">                create tab with default profile</span><br><span class="line"></span><br><span class="line">            end if</span><br><span class="line"></span><br><span class="line">            tell current session to write text command</span><br><span class="line"></span><br><span class="line">        end tell</span><br><span class="line"></span><br><span class="line">    end tell</span><br><span class="line">end run</span><br></pre></td></tr></table></figure></li>
+<li><p>设置服务快捷键<br><img src="media/15600567251459/last.png" alt="last"></p>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/12/13/%E7%AC%A6%E5%8F%B7%E5%8C%96Crash%E6%96%87%E4%BB%B6/" rel="next" title="符号化Crash文件">
+                <i class="fa fa-chevron-left"></i> 符号化Crash文件
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="ScoX" />
+          <p class="site-author-name" itemprop="name">ScoX</p>
+           
+              <p class="site-description motion-element" itemprop="description">ScoX的博客</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MacOS-使用Iterm2替代系统terminal"><span class="nav-number">1.</span> <span class="nav-text">MacOS 使用Iterm2替代系统terminal</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、安装iTerm2"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、安装iTerm2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、配置Oh-My-Zsh"><span class="nav-number">1.0.2.</span> <span class="nav-text">二、配置Oh My Zsh</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、下载字体"><span class="nav-number">1.0.3.</span> <span class="nav-text">三、下载字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、使用zsh自带主题"><span class="nav-number">1.0.4.</span> <span class="nav-text">四、使用zsh自带主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、使用powerlevel9k主题"><span class="nav-number">1.0.5.</span> <span class="nav-text">五、使用powerlevel9k主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六、配置插件"><span class="nav-number">1.0.6.</span> <span class="nav-text">六、配置插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#七、设置Finder目录打开iTerm2"><span class="nav-number">1.0.7.</span> <span class="nav-text">七、设置Finder目录打开iTerm2</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ScoX</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

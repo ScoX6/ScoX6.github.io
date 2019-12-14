@@ -94,15 +94,15 @@
 
 
 
-<meta name="description" content="ScoX的博客">
+<meta name="description" content="符号化Crash文件一、获取以下三个文件 crash报告（.crash文件） 符号文件（.dsymb文件） 应用程序文件（appName.app文件，把IPA文件后缀改为zip，然后解压，Payload目录下的appName.app文件。这里的appName是你的应用程序的名称）  二、在处理之前将”.app”,”.DSYM”,”.crash”文件放在同一个目录下 三、执行下面命令1export">
 <meta property="og:type" content="article">
-<meta property="og:title" content="max下使用hexo搭建blog">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;13&#x2F;max%E4%B8%8B%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BAblog&#x2F;index.html">
+<meta property="og:title" content="符号化Crash文件">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;13&#x2F;%E7%AC%A6%E5%8F%B7%E5%8C%96Crash%E6%96%87%E4%BB%B6&#x2F;index.html">
 <meta property="og:site_name" content="ScoX">
-<meta property="og:description" content="ScoX的博客">
+<meta property="og:description" content="符号化Crash文件一、获取以下三个文件 crash报告（.crash文件） 符号文件（.dsymb文件） 应用程序文件（appName.app文件，把IPA文件后缀改为zip，然后解压，Payload目录下的appName.app文件。这里的appName是你的应用程序的名称）  二、在处理之前将”.app”,”.DSYM”,”.crash”文件放在同一个目录下 三、执行下面命令1export">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2019-12-13T07:24:59.000Z">
-<meta property="article:modified_time" content="2019-12-13T07:24:59.775Z">
+<meta property="article:published_time" content="2019-12-13T07:22:59.000Z">
+<meta property="article:modified_time" content="2019-12-14T15:19:28.597Z">
 <meta property="article:author" content="ScoX">
 <meta name="twitter:card" content="summary">
 
@@ -133,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/12/13/max下使用hexo搭建blog/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/12/13/符号化Crash文件/"/>
 
 
 
 
 
-  <title>max下使用hexo搭建blog | ScoX</title>
+  <title>符号化Crash文件 | ScoX</title>
   
 
 
@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/13/max%E4%B8%8B%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BAblog/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/13/%E7%AC%A6%E5%8F%B7%E5%8C%96Crash%E6%96%87%E4%BB%B6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ScoX">
@@ -279,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">max下使用hexo搭建blog</h1>
+          <h1 class="post-title" itemprop="name headline">符号化Crash文件</h1>
         
 
         <div class="post-meta">
@@ -291,7 +291,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-13T15:24:59+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-13T15:22:59+08:00">
                 2019-12-13
               </time>
             
@@ -329,7 +329,14 @@
       
 
       
-        
+        <h1 id="符号化Crash文件"><a href="#符号化Crash文件" class="headerlink" title="符号化Crash文件"></a>符号化Crash文件</h1><h3 id="一、获取以下三个文件"><a href="#一、获取以下三个文件" class="headerlink" title="一、获取以下三个文件"></a>一、获取以下三个文件</h3><ol>
+<li>crash报告（.crash文件）</li>
+<li>符号文件（.dsymb文件）</li>
+<li>应用程序文件（appName.app文件，把IPA文件后缀改为zip，然后解压，Payload目录下的appName.app文件。这里的appName是你的应用程序的名称）</li>
+</ol>
+<h3 id="二、在处理之前"><a href="#二、在处理之前" class="headerlink" title="二、在处理之前"></a>二、在处理之前</h3><p>将”.app”,”.DSYM”,”.crash”文件放在同一个目录下</p>
+<h3 id="三、执行下面命令"><a href="#三、执行下面命令" class="headerlink" title="三、执行下面命令"></a>三、执行下面命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export DEVELOPER_DIR&#x3D;&#x2F;Applications&#x2F;Xcode.app&#x2F;Contents&#x2F;Developer</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;Application&#x2F;Xcode.app&#x2F;Contents&#x2F;Developer&#x2F;Platforms&#x2F;iPhoneOS.platform&#x2F;Developer&#x2F;Library&#x2F;PrivateFrameworks&#x2F;DTDeviceKitBase.framework&#x2F;Versions&#x2F;A&#x2F;Resources&#x2F;symbolicatecrash appName.crash appName.app &gt; appName.log</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -353,8 +360,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/12/13/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2019/12/13/iOS%E9%9B%86%E6%88%90FFmpeg/" rel="next" title="iOS集成FFmpeg">
+                <i class="fa fa-chevron-left"></i> iOS集成FFmpeg
               </a>
             
           </div>
@@ -362,6 +369,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/13/MacOS%20%E4%BD%BF%E7%94%A8iterm2%E6%9B%BF%E4%BB%A3%E7%B3%BB%E7%BB%9Fterminal/" rel="prev" title="MacOS 使用Iterm2替代系统terminal">
+                MacOS 使用Iterm2替代系统terminal <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -413,8 +424,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -429,7 +449,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -458,6 +478,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#符号化Crash文件"><span class="nav-number">1.</span> <span class="nav-text">符号化Crash文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、获取以下三个文件"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、获取以下三个文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、在处理之前"><span class="nav-number">1.0.2.</span> <span class="nav-text">二、在处理之前</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、执行下面命令"><span class="nav-number">1.0.3.</span> <span class="nav-text">三、执行下面命令</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
