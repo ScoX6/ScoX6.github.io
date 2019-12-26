@@ -262,6 +262,146 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/13/0003/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ScoX">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ScoX">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/13/0003/" itemprop="url">AOPAspect 思路分析</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-13T15:30:59+08:00">
+                2019-12-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="AOPAspect-思路分析"><a href="#AOPAspect-思路分析" class="headerlink" title="AOPAspect 思路分析"></a>AOPAspect 思路分析</h1><h3 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h3><p><a href="0003/AOPAspect.h">AOPAspect.h</a><br><a href="0003/AOPAspect.m">AOPAspect.m</a></p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><ul>
+<li><p>绑定思路</p>
+<ol>
+<li>提取目标方法(Method)的实现(IMP)</li>
+<li>替换目标方法(Method)的实现为_objc_msgForward</li>
+<li>自身生成一个forwardingTargetForSelector：的映射方法并绑定forwardingTargetForSelector:实现(IMP)</li>
+<li>替换目标的forwardingTargetForSelector：的实现(IMP)为自身的baseClassForwardingTargetForSelector：实现(IMP)</li>
+<li>自身生成目标方法的一个映射方法，并绑定步骤1的实现(IMP)</li>
+<li>存储为替换类型</li>
+<li>存储为外部绑定类型</li>
+</ol>
+</li>
+<li><p>路由思路</p>
+<ol>
+<li>恢复目标方法的默认实现</li>
+<li>循环存储结构，并调用内部绑定的block</li>
+<li>重新绑定</li>
+</ol>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/13/0005/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -821,146 +961,6 @@
 </li>
 </ol>
 <p>参考链接：<br>iOS 集成FFmpeg(通过ffmpeg.h进行调用)：<a href="https://www.jianshu.com/p/35ba59292e70" target="_blank" rel="noopener">https://www.jianshu.com/p/35ba59292e70</a><br>iOS项目中编译和集成FFmpeg：<a href="https://www.jianshu.com/p/8eef655e1e7c" target="_blank" rel="noopener">https://www.jianshu.com/p/8eef655e1e7c</a><br>（iOS） FFmpeg学习笔记：<a href="https://www.jianshu.com/p/bdc78b45354c" target="_blank" rel="noopener">https://www.jianshu.com/p/bdc78b45354c</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/12/0003/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ScoX">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ScoX">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/12/0003/" itemprop="url">0003</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-12T18:52:17+08:00">
-                2019-12-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="AOPAspect-思路分析"><a href="#AOPAspect-思路分析" class="headerlink" title="AOPAspect 思路分析"></a>AOPAspect 思路分析</h1><h3 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h3><p><a href="AOPAspect.h">AOPAspect.h</a><br><a href="AOPAspect.m">AOPAspect.m</a></p>
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><ul>
-<li><p>绑定思路</p>
-<ol>
-<li>提取目标方法(Method)的实现(IMP)</li>
-<li>替换目标方法(Method)的实现为_objc_msgForward</li>
-<li>自身生成一个forwardingTargetForSelector：的映射方法并绑定forwardingTargetForSelector:实现(IMP)</li>
-<li>替换目标的forwardingTargetForSelector：的实现(IMP)为自身的baseClassForwardingTargetForSelector：实现(IMP)</li>
-<li>自身生成目标方法的一个映射方法，并绑定步骤1的实现(IMP)</li>
-<li>存储为替换类型</li>
-<li>存储为外部绑定类型</li>
-</ol>
-</li>
-<li><p>路由思路</p>
-<ol>
-<li>恢复目标方法的默认实现</li>
-<li>循环存储结构，并调用内部绑定的block</li>
-<li>重新绑定</li>
-</ol>
-</li>
-</ul>
 
           
         
